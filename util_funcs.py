@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def plot_feats(peaks, labels, fpath= None, bins=10):
 	
-    fig = plt.figure(figsize=(10,6))
+    fig = plt.figure(figsize=(12,10))
     
     for i in range(peaks.shape[1]):
         plt.subplot(5,5,i+1)
@@ -67,6 +67,7 @@ def integerTransform(vals):
 def noiseAddedLog10Transform(vals_pdSeries):
     ## note that this needs to be a pd.Series
     ## this is for strictly non-negative distributions
+
     noise = np.random.normal(0, np.mean(np.diff(vals_pdSeries.value_counts().axes))/2, len(vals_pdSeries))
     new_vals = vals_pdSeries + noise
     new_transformed = np.log10( np.abs(new_vals) ) # negative values not meaningful

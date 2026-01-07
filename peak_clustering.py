@@ -47,7 +47,6 @@ class eCLIP_peaks(object):
 
 #####
 
-
 ##read the file
 peaks = pd.read_table("/hpcnfs/data/GN2/gmandana/bin/4.1.0/home/ieo5559/ENHANCEDCLIP/characterisation_2/relax_peak_region_features.dat")
 #for now ignore the kmers
@@ -78,9 +77,8 @@ print("features transformed")
 myPeaks.scale_data()
 plot_feats(pd.DataFrame(myPeaks.scaled_data), labels = data_columns[1:], bins=50, fpath = os.path.join(outdir, "feature_posttransform_scaling.pdf"))
 
-## run UMAP
+## run UMAP and clustering
 myPeaks.run_UMAP( umap.UMAP(n_neighbors = 50, min_dist=0.0, n_components=3, random_state=randomseed) )
-
 myPeaks.kmeans( cluster.KMeans(n_clusters=number_of_clusters, random_state=randomseed) )
 
 ####### plotting ##########
