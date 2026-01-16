@@ -1,6 +1,7 @@
 ## Description
 
 Characterisation of subgroups of genomic regions based on underlying features.
+Background and goal:
 
 * Features are transformed and scaled using custom transformation functions, and scikit-learn functions.
 * Transformed and scaled data are subjected to [UMAP](https://umap-learn.readthedocs.io/).
