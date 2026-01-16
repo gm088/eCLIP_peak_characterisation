@@ -9,15 +9,6 @@ Background and goal:
 
 ## Overview
 
-feature distribution after transformation and scaling
-[feature distribution after transformation and scaling](./outputs/feature_posttransform_scaling.pdf)
-
-feature distribution on UMAP projection
-[feature distribution on UMAP projection](./outputs/feature_vals.pdf)
-
-define 4 clusters
-[define 4 clusters](./outputs/clusters.pdf)
-
-feature distribution of example cluster
-[feature distribution of example cluster](./outputs/feature_dist_clus_3.pdf)
+Summary of procedure
+[schematic](./outputs/eCLIP_char.png)
 
