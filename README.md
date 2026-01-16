@@ -9,6 +9,5 @@ Background and goal:
 
 ## Overview
 
-Summary of procedure
-[schematic](./outputs/eCLIP_char.png)
+![schematic](./outputs/eCLIP_char.png)
 
