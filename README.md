@@ -9,4 +9,4 @@ Background and goal:
 
 ## Overview
 
-<img src="./outputs/eCLIP_char.png" alt="schematic" width="200"/>
+<img src="./outputs/eCLIP_char.png" alt="schematic" width="1000"/>
